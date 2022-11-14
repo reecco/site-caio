@@ -38,7 +38,7 @@ export default {
     async send(event) {
       event.preventDefault()
 
-      const alert = 'Fill in the fields correctly.'
+      const alert = 'Preencha os campos corretamente.'
 
       let emailInput = document.getElementById('input-email')
       let nameInput = document.getElementById('input-name')
@@ -69,7 +69,7 @@ export default {
         const res = await api(this.name, this.email, this.text)
 
         if (res.status == 201) {
-          this.successMessage = 'Message sent successfully!'
+          this.successMessage = 'Mensagem enviada com sucesso!'
           setTimeout(() => this.successMessage = '', 5000)
         } else {
           this.alert = res.response.data.message
