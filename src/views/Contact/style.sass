@@ -1,0 +1,108 @@
+.contact
+  margin-top: 5%
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  h1
+    color: #fefefe
+    font-size: 2.5rem
+
+  .box-form
+    margin-top: 5%
+    form
+      display: flex
+      flex-direction: column
+
+      .success-message, .error-message
+        margin: 0 auto
+        font-size: 1.2rem
+        text-align: center
+        border-radius: 20px
+        width: 300px
+        color: #000
+
+      .success-message
+        background-color: #6bb570
+      .error-message
+        background-color: #e08383
+
+      .input, .textarea
+        margin: 10px
+        width: 500px
+        font-size: 1.2rem
+        padding: 10px 5px
+        border-radius: 10px
+        opacity: 0.9
+        border: none
+        color: #000
+
+      .input
+        height: 50px
+
+      .textarea
+        resize: none
+        height: 150px
+
+      .box-button
+        display: flex
+        justify-content: center
+
+        .btn-send
+          width: 200px
+          height: 50px
+          margin: 10px
+          font-size: 1.3rem
+          border-radius: 10px
+          border: none
+          cursor: pointer
+          color: #fefe
+          background-color: #ff8effee
+          transition: .2s
+
+          &:hover
+            opacity: 0.7
+
+          &:active
+            background-color: #ba68baee
+
+@media (max-width: 420px)
+  .contact
+    margin-top: 15%
+
+    h1
+      font-size: 1.5rem
+
+    .box-form
+      form
+        margin-top: 7%
+
+        .success-message, .error-message
+          width: 70%
+
+        .input, .textarea
+          width: 90%
+
+        .box-button
+          .btn-send
+            width: 60%
+
+@media (min-width: 421px) and (max-width: 720px)
+  .contact
+    margin-top: 15%
+
+    h1
+      font-size: 1.6rem
+
+    .box-form
+      form
+
+        .success-message, .error-message
+          width: 80%
+
+        .input, .textarea
+          width: 400px
+
+        .box-button
+          .btn-send
+            width: 60%

@@ -1,0 +1,92 @@
+.home
+  margin-top: 5%
+  display: flex
+  justify-content: center
+  flex-direction: column
+  
+  .box-photo
+    display: flex
+    align-items: center
+    flex-direction: column
+
+    .photo
+      background-image: url('@/assets/images/caio.jpeg')
+      background-size: 180%
+      background-position: 50% 20%
+      background-repeat: no-repeat
+      width: 150px
+      height: 150px
+      border-radius: 50%
+      transition: .5s
+      box-shadow: 2px 2px 8px #555252
+      
+      &:hover
+        scale: 1.03
+    
+    h1
+      color: #fefe
+      margin-top: 2%
+      font-weight: 500
+      font-size: 2.5rem
+      font-weight: bold
+      padding: 5px 30px
+
+  .box-main
+    display: flex
+    justify-content: center
+    opacity: .99
+    margin-top: 1%
+
+    .url-list
+      width: 500px
+      margin: 0 auto
+      li
+        background-color: #ff8effee
+        list-style-type: none
+        margin: 15px
+        width: 500px
+        border: 3px solid #ff8effee
+        border-radius: 20px
+        transition: .5s
+
+        &:hover
+          background-color: transparent
+
+        .item
+          display: flex
+          align-items: center
+          text-decoration: none
+          margin-left: 50px
+          padding: 5px 0
+          font-size: 1.3rem
+          color: #fefe
+          transition: .5s
+          font-weight: 600
+
+          &:hover
+            color: #dceaf9
+
+          img
+            width: 2.6rem
+            margin-right: 10px
+
+          p
+            width: 30px
+
+@media (max-width: 420px)
+  .home
+    .box-main
+      .url-list
+        li
+          width: 90%
+          .item
+            margin-left: 15px
+            justify-content: flex-start
+
+@media (min-width: 421px) and (max-width: 720px)
+  .home
+    .box-main
+      .url-list
+        li
+          width: 90%
+            
